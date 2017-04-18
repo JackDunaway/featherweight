@@ -128,6 +128,11 @@
 					<Item Name="FTW-Request-ReplyToPoisonPill.vi" Type="VI" URL="../src/actor/request/FTW-Request-ReplyToPoisonPill.vi"/>
 					<Item Name="FTW-Request-Unknown.vi" Type="VI" URL="../src/actor/request/FTW-Request-Unknown.vi"/>
 				</Item>
+				<Item Name="scheduler" Type="Folder">
+					<Item Name="FTW-ScheduledJob-SyncToSystemClock.lvclass" Type="LVClass" URL="../src/actor/scheduler/job/sysclock/FTW-ScheduledJob-SyncToSystemClock.lvclass"/>
+					<Item Name="FTW-ScheduledJob.lvclass" Type="LVClass" URL="../src/actor/scheduler/job/FTW-ScheduledJob.lvclass"/>
+					<Item Name="FTW-Scheduler.lvclass" Type="LVClass" URL="../src/actor/scheduler/FTW-Scheduler.lvclass"/>
+				</Item>
 				<Item Name="subscriber" Type="Folder">
 					<Item Name="FTW-Subscriber-Construct.vi" Type="VI" URL="../src/socket/subscriber/FTW-Subscriber-Construct.vi"/>
 					<Item Name="FTW-Subscriber-Destroy.vi" Type="VI" URL="../src/socket/subscriber/FTW-Subscriber-Destroy.vi"/>
@@ -154,7 +159,6 @@
 					<Item Name="FTW-Socket-Core-ValidateAddress.vi" Type="VI" URL="../src/socket/support/FTW-Socket-Core-ValidateAddress.vi"/>
 				</Item>
 				<Item Name="FTW-Actor-Instance.lvclass" Type="LVClass" URL="../src/actor/instance/FTW-Actor-Instance.lvclass"/>
-				<Item Name="FTW-Scheduler.lvclass" Type="LVClass" URL="../src/actor/scheduler/FTW-Scheduler.lvclass"/>
 			</Item>
 			<Item Name="application" Type="Folder">
 				<Item Name="FTW-App-StringToVersion.vi" Type="VI" URL="../src/application/FTW-App-StringToVersion.vi"/>
@@ -265,6 +269,7 @@
 				<Item Name="FTW-JSON-Destroy.vi" Type="VI" URL="../src/json/FTW-JSON-Destroy.vi"/>
 				<Item Name="FTW-JSON-Duplicate.vi" Type="VI" URL="../src/json/FTW-JSON-Duplicate.vi"/>
 				<Item Name="FTW-JSON-GetElementInfo.vi" Type="VI" URL="../src/json/FTW-JSON-GetElementInfo.vi"/>
+				<Item Name="FTW-JSON-Integer-AtomicIncrement.vi" Type="VI" URL="../src/json/FTW-JSON-Integer-AtomicIncrement.vi"/>
 				<Item Name="FTW-JSON-JoinMode.ctl" Type="VI" URL="../src/json/FTW-JSON-JoinMode.ctl"/>
 				<Item Name="FTW-JSON-Object-DeleteAllElements.vi" Type="VI" URL="../src/json/FTW-JSON-Object-DeleteAllElements.vi"/>
 				<Item Name="FTW-JSON-Object-DeleteElement.vi" Type="VI" URL="../src/json/FTW-JSON-Object-DeleteElement.vi"/>
@@ -451,6 +456,7 @@
 				<Property Name="NI.DISK" Type="Bool">true</Property>
 			</Item>
 		</Item>
+		<Item Name="FTW-ScheduledJob-PeriodicOverdueBehavior.ctl" Type="VI" URL="../src/actor/scheduler/job/periodic/FTW-ScheduledJob-PeriodicOverdueBehavior.ctl"/>
 		<Item Name="FTW-Test.json" Type="Document" URL="../tests/FTW-Test.json"/>
 		<Item Name="FTW-Test.vi" Type="VI" URL="../tests/FTW-Test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
